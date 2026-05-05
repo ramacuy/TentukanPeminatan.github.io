@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Peminatan</title>
+  <link rel="stylesheet" href="style_copy.css">
+</head>
+<body>
+
+<!-- HOME -->
+
+
+<div id="home" class="screen active">
+    <img src="img/left-cloud.png" class="cloud cloud-left">
+    <img src="img/right-cloud.png" class="cloud cloud-right">
+    <div class="bubble-container"></div>
+  <div class="home-content">
+    <h1>Hello!</h1><br>
+    <p>Cari Tahu <b>PEMINATAN</b> Milikmu di<br>Produksi Media UI</p>
+    <button id="start-btn">Mulai Tes</button>
+  </div>
+
+  <div class="home-bottom">
+    <div class="pink-bg"></div>
+
+    <div class="box-wrapper">
+      <div class="gradient-box"></div>
+
+      <div class="info-box">
+        <h3>Apa yang Kamu Dapat?</h3><br>
+        <p>
+          Setelah mengerjakan 10 soal, kamu akan 
+          mendapatkan rekomendasi peminatan yang cocok denganmu!
+        </p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- QUIZ -->
+<div id="quiz" class="screen">
+    <img src="img/left-cloud.png" class="cloud cloud-left">
+    <img src="img/right-cloud.png" class="cloud cloud-right">
+    <div class="bubble-container"></div>
+  <div class="quiz-wrapper">
+    <div class="outer-box">
+    <div class="quiz-box">
+      <img src="img/axolotl.png" class="axolotl">
+      <h2 id="question"></h2>
+      <div id="options"></div>
+      <button id="submit-btn">LIHAT HASIL</button>
+    </div>
+    </div>
+
+    <!-- NAV -->
+    <div class="nav-buttons">
+      <button id="prev-btn">
+    <img src="img/kiri.png" alt="prev">
+    </button>
+
+    <button id="next-btn">
+    <img src="img/kanan.png" alt="next">
+    </button>
+    </div>
+
+    <div id="warning-text">PILIH JAWABAN</div>
+    <!-- SUBMIT -->
+
+
+  </div>
+</div>
+
+<!-- RESULT -->
+<div id="result-box" class="screen">
+    <img src="img/left-cloud.png" class="cloud cloud-left">
+    <img src="img/right-cloud.png" class="cloud cloud-right">
+    <div class="bubble-container"></div>
+
+  <!-- TEXT HASIL -->
+  <h2 id="result-text"></h2>
+
+  <!-- background silang -->
+  <div class="cross"></div>
+
+  <!-- kartu -->
+  <div class="cards">
+    <img id="result2" class="card small left">
+    <img id="result1" class="card main">
+    <img id="result3" class="card small right">
+  </div>
+
+</div>
+
+<script src="script_copy.js"></script>
+</body>
+</html>
